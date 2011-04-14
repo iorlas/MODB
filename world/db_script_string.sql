@@ -33,7 +33,6 @@ CREATE TABLE `db_script_string` (
 
 LOCK TABLES `db_script_string` WRITE;
 /*!40000 ALTER TABLE `db_script_string` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES (2000000001,'Get in the Ring of Blood, $N. The fight is about to start!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES (2000000002,'The battle is about to begin!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES (2000000003,'$N versus the ferocious clefthoof, Brokentoe!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
@@ -354,7 +353,6 @@ INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `con
 INSERT INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES (2000005305,'Who? The Tauren Chieftains! What? A live performance. Where? The World\'s End Tavern! When? The top of the hour! BE THERE!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `db_script_string` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -39,7 +39,6 @@ CREATE TABLE `quest_end_scripts` (
 
 LOCK TABLES `quest_end_scripts` WRITE;
 /*!40000 ALTER TABLE `quest_end_scripts` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (3364,8,0,0,0,0,0,0,2000000046,0,0,0,0,0,0,0,'');
 INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (3364,6,1,7,0,0,0,0,0,0,0,0,0,0,0,0,'');
 INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (3364,2,0,0,0,0,0,0,2000000045,0,0,0,0,0,0,0,'');
@@ -243,7 +242,6 @@ INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong
 INSERT INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (308,62,0,0,0,0,0,0,2000000079,0,0,0,0,0,0,0,'');
 /*!40000 ALTER TABLE `quest_end_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

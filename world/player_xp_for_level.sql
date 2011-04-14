@@ -25,7 +25,6 @@ CREATE TABLE `player_xp_for_level` (
 
 LOCK TABLES `player_xp_for_level` WRITE;
 /*!40000 ALTER TABLE `player_xp_for_level` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `player_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES (1,400);
 INSERT INTO `player_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES (2,900);
 INSERT INTO `player_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES (3,1400);
@@ -97,7 +96,6 @@ INSERT INTO `player_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES (68,768900
 INSERT INTO `player_xp_for_level` (`lvl`, `xp_for_next_level`) VALUES (69,779700);
 /*!40000 ALTER TABLE `player_xp_for_level` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

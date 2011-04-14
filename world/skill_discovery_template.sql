@@ -26,7 +26,6 @@ CREATE TABLE `skill_discovery_template` (
 
 LOCK TABLES `skill_discovery_template` WRITE;
 /*!40000 ALTER TABLE `skill_discovery_template` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `skill_discovery_template` (`spellId`, `reqSpell`, `chance`) VALUES (28580,0,0.1);
 INSERT INTO `skill_discovery_template` (`spellId`, `reqSpell`, `chance`) VALUES (28581,0,0.1);
 INSERT INTO `skill_discovery_template` (`spellId`, `reqSpell`, `chance`) VALUES (28582,0,0.1);
@@ -46,7 +45,6 @@ INSERT INTO `skill_discovery_template` (`spellId`, `reqSpell`, `chance`) VALUES 
 INSERT INTO `skill_discovery_template` (`spellId`, `reqSpell`, `chance`) VALUES (41503,28576,30);
 /*!40000 ALTER TABLE `skill_discovery_template` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

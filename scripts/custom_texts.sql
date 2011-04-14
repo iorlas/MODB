@@ -38,10 +38,8 @@ CREATE TABLE `custom_texts` (
 
 LOCK TABLES `custom_texts` WRITE;
 /*!40000 ALTER TABLE `custom_texts` DISABLE KEYS */;
-set autocommit=0;
 /*!40000 ALTER TABLE `custom_texts` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

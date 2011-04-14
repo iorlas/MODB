@@ -27,7 +27,6 @@ CREATE TABLE `pet_name_generation` (
 
 LOCK TABLES `pet_name_generation` WRITE;
 /*!40000 ALTER TABLE `pet_name_generation` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `pet_name_generation` (`id`, `word`, `entry`, `half`) VALUES (1,'Aba',416,0);
 INSERT INTO `pet_name_generation` (`id`, `word`, `entry`, `half`) VALUES (2,'Az',416,0);
 INSERT INTO `pet_name_generation` (`id`, `word`, `entry`, `half`) VALUES (3,'Bel',416,0);
@@ -290,7 +289,6 @@ INSERT INTO `pet_name_generation` (`id`, `word`, `entry`, `half`) VALUES (259,'t
 INSERT INTO `pet_name_generation` (`id`, `word`, `entry`, `half`) VALUES (260,'tom',17252,1);
 /*!40000 ALTER TABLE `pet_name_generation` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

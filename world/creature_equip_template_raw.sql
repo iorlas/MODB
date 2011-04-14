@@ -33,7 +33,6 @@ CREATE TABLE `creature_equip_template_raw` (
 
 LOCK TABLES `creature_equip_template_raw` WRITE;
 /*!40000 ALTER TABLE `creature_equip_template_raw` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `creature_equip_template_raw` (`entry`, `equipmodel1`, `equipmodel2`, `equipmodel3`, `equipinfo1`, `equipinfo2`, `equipinfo3`, `equipslot1`, `equipslot2`, `equipslot3`) VALUES (1,0,0,6231,0,0,50266626,0,0,15);
 INSERT INTO `creature_equip_template_raw` (`entry`, `equipmodel1`, `equipmodel2`, `equipmodel3`, `equipinfo1`, `equipinfo2`, `equipinfo3`, `equipslot1`, `equipslot2`, `equipslot3`) VALUES (2,0,0,6232,0,0,50266626,0,0,15);
 INSERT INTO `creature_equip_template_raw` (`entry`, `equipmodel1`, `equipmodel2`, `equipmodel3`, `equipinfo1`, `equipinfo2`, `equipinfo3`, `equipslot1`, `equipslot2`, `equipslot3`) VALUES (3,8600,0,0,50267394,0,0,273,0,0);
@@ -1963,7 +1962,6 @@ INSERT INTO `creature_equip_template_raw` (`entry`, `equipmodel1`, `equipmodel2`
 INSERT INTO `creature_equip_template_raw` (`entry`, `equipmodel1`, `equipmodel2`, `equipmodel3`, `equipinfo1`, `equipinfo2`, `equipinfo3`, `equipslot1`, `equipslot2`, `equipslot3`) VALUES (2216,41641,0,0,33489666,0,0,3,0,0);
 /*!40000 ALTER TABLE `creature_equip_template_raw` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

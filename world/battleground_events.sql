@@ -27,7 +27,6 @@ CREATE TABLE `battleground_events` (
 
 LOCK TABLES `battleground_events` WRITE;
 /*!40000 ALTER TABLE `battleground_events` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `battleground_events` (`map`, `event1`, `event2`, `description`) VALUES (30,0,0,'Firstaid Station - Alliance Assaulted');
 INSERT INTO `battleground_events` (`map`, `event1`, `event2`, `description`) VALUES (30,0,1,'Firstaid Station - Alliance Control');
 INSERT INTO `battleground_events` (`map`, `event1`, `event2`, `description`) VALUES (30,0,2,'Firstaid Station - Horde Assaulted');
@@ -221,7 +220,6 @@ INSERT INTO `battleground_events` (`map`, `event1`, `event2`, `description`) VAL
 INSERT INTO `battleground_events` (`map`, `event1`, `event2`, `description`) VALUES (572,254,0,'Doors');
 /*!40000 ALTER TABLE `battleground_events` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

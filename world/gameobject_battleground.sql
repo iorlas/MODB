@@ -26,7 +26,6 @@ CREATE TABLE `gameobject_battleground` (
 
 LOCK TABLES `gameobject_battleground` WRITE;
 /*!40000 ALTER TABLE `gameobject_battleground` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES (90000,0,0);
 INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES (90001,1,0);
 INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES (90008,254,0);
@@ -357,7 +356,6 @@ INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES (90446
 INSERT INTO `gameobject_battleground` (`guid`, `event1`, `event2`) VALUES (90447,64,0);
 /*!40000 ALTER TABLE `gameobject_battleground` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

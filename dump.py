@@ -8,7 +8,7 @@ verbose = len(sys.argv) > 1 and sys.argv[1] == '-v'
 
 #flags for mysqldump command
 mysqldump_params = [
-#'--add-locks', #import script locks databases by mysqlimport
+'--add-locks', #import script locks databases by mysqlimport
 '--allow-keywords', '--add-drop-table', #basic things
 '--skip-comments', '--skip-dump-date', #skip garbage
 
@@ -45,10 +45,14 @@ mysql_mangos_scripts = 'realm1_scripts'
 mysql_mangos_realm = 'mangos_realmd'
 """
 
-if len(sys.argv) > 1 and sys.argv[1] == '-h':
-    print "At first, you need to create a config file. Name it db_info.py. After that, copy and paste this:\n"
+if (len(sys.argv) > 1 and sys.argv[1] == '-h') or len(sys.argv) < 2:
+    print """python dump.py [db info file name]|-h <-v>
+This file updates dumps. If you has something new in you DB and want to share it - make a dump with this file and build pull request!
+    """
+    print "Are you new for this? At first, you need to create a config file. Name it db_info.py. After that, copy and paste this:"
     print demo_config
-    print "\nAnd now edit it as you need and run me!"
+    print "And now edit it as you need and run me with it's name as argument!"
+    exit(1)
 
 #helpful func for verbose output
 def dprint(s,verbose_s=None):
@@ -61,14 +65,14 @@ def dprint(s,verbose_s=None):
 
 #check for file
 try:
-    db_info = __import__('db_info')
+    db_info = __import__(sys.argv[1].replace('.py', ''))
 except:
     print """WARNING!!!
 DB info file not found or contains errors! If you are new, run this file with -h flag.
-Make sure you create a file "db_info.py" in root folder of this file.
-This must contain this like struct:
+Make sure you create a file "%s" in root folder of this file.
+This must contain thislike struct:
 
-""", demo_config
+"""%(sys.argv[1]), demo_config
     exit(1)
 #check for config variables
 try:
@@ -81,17 +85,17 @@ try:
     mysql_mangos_realm = db_info.mysql_mangos_realm
 except:
     print """WARNING!!!
-Some variables cannot be found, make sure db_info.py file contains this-like struct:
+Some variables cannot be found, make sure %s file contains this-like struct:
 
-    """, demo_config
+    """%(sys.argv[1]), demo_config
 
 #make queries
 mysqldump_begin = 'mysqldump ' + ' '.join(mysqldump_params)
 mysql_auth_string = '--password=%s -u %s -h %s'%(mysql_passwd,mysql_username,mysql_host)
-mysqldump_exec_scripts = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_scripts), '--result-file='+rel('scripts/{table}.sql'), mysql_auth_string, mysql_mangos_scripts, '{table}']))
-mysqldump_exec_characters = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_characters), '--result-file='+rel('characters/{table}.sql'), mysql_auth_string, mysql_mangos_characters, '{table}']))
-mysqldump_exec_realm = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_realm), '--result-file='+rel('realm/{table}.sql'), mysql_auth_string, mysql_mangos_realm, '{table}']))
-mysqldump_exec_world = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_world), '--result-file='+rel('world/{table}.sql'), mysql_auth_string, mysql_mangos_world, '{table}']))
+mysqldump_exec_scripts = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_scripts), '--result-file='+rel('scripts/{table}.sql'), mysql_auth_string, mysql_mangos_scripts, '{table}'))
+mysqldump_exec_characters = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_characters), '--result-file='+rel('characters/{table}.sql'), mysql_auth_string, mysql_mangos_characters, '{table}'))
+mysqldump_exec_realm = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_realm), '--result-file='+rel('realm/{table}.sql'), mysql_auth_string, mysql_mangos_realm, '{table}'))
+mysqldump_exec_world = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_world), '--result-file='+rel('world/{table}.sql'), mysql_auth_string, mysql_mangos_world, '{table}'))
 
 #get tables list
 try:

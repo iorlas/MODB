@@ -30,7 +30,6 @@ CREATE TABLE `script_waypoint` (
 
 LOCK TABLES `script_waypoint` WRITE;
 /*!40000 ALTER TABLE `script_waypoint` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `location_z`, `waittime`, `point_comment`) VALUES (349,1,-8769.59,-2185.73,141.975,0,'');
 INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `location_z`, `waittime`, `point_comment`) VALUES (349,2,-8776.54,-2193.78,140.96,0,'');
 INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `location_z`, `waittime`, `point_comment`) VALUES (349,3,-8783.29,-2194.82,140.462,0,'');
@@ -1816,7 +1815,6 @@ INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `
 INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `location_z`, `waittime`, `point_comment`) VALUES (30658,4,1785.16,803.857,44.3648,30000,'');
 /*!40000 ALTER TABLE `script_waypoint` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

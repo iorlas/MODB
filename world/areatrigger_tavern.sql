@@ -25,7 +25,6 @@ CREATE TABLE `areatrigger_tavern` (
 
 LOCK TABLES `areatrigger_tavern` WRITE;
 /*!40000 ALTER TABLE `areatrigger_tavern` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES (71,'Westfall - Sentinel Hill Inn');
 INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES (178,'Strahnbrad');
 INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES (562,'Elwynn Forest - Goldshire - Lion\'s Pride Inn');
@@ -99,7 +98,6 @@ INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES (4775,'Brackenwall Villag
 INSERT INTO `areatrigger_tavern` (`id`, `name`) VALUES (4847,'Isle of Quel\'Danas, Sun\'s Reach Harbor Inn');
 /*!40000 ALTER TABLE `areatrigger_tavern` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -6,13 +6,6 @@ def rel(*x):
 #you can use -v flag for verbose output
 verbose = len(sys.argv) > 2 and sys.argv[2] == '-v'
 
-#flags for mysqldump command
-mysqldump_params = [
-'--silent', #SILENT! Only errors!
-'--lock-tables', #we need to get databases locked
-'--local', #read files from local(client)
-]
-
 #demo structure of db_info.py file
 demo_config = """
 mysql_passwd = 'l00lzp4sswD'
@@ -73,7 +66,7 @@ Some variables cannot be found, make sure %s file contains this-like struct:
 
 #make queries
 mysql_auth_string = '--password=%s -u %s -h %s'%(mysql_passwd,mysql_username,mysql_host)
-mysql_import_exec = ' '.join(('mysqlimport', ' '.join(mysqldump_params), mysql_auth_string, '{db}', rel('world/{dump}')))
+mysql_import_exec = ' '.join(('mysql', mysql_auth_string, '{db}', '-e "source ' + rel('world/{dump}'+'"')))
 
 #get list of dumps
 try:

@@ -25,7 +25,6 @@ CREATE TABLE `spell_elixir` (
 
 LOCK TABLES `spell_elixir` WRITE;
 /*!40000 ALTER TABLE `spell_elixir` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `spell_elixir` (`entry`, `mask`) VALUES (673,2);
 INSERT INTO `spell_elixir` (`entry`, `mask`) VALUES (2367,1);
 INSERT INTO `spell_elixir` (`entry`, `mask`) VALUES (2374,1);
@@ -134,7 +133,6 @@ INSERT INTO `spell_elixir` (`entry`, `mask`) VALUES (46837,11);
 INSERT INTO `spell_elixir` (`entry`, `mask`) VALUES (46839,11);
 /*!40000 ALTER TABLE `spell_elixir` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

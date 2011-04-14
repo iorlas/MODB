@@ -30,7 +30,6 @@ CREATE TABLE `instance_template` (
 
 LOCK TABLES `instance_template` WRITE;
 /*!40000 ALTER TABLE `instance_template` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (30,0,10,0,50,7200,'');
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (33,0,14,30,10,0,'instance_shadowfang_keep');
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (34,0,15,32,10,0,'');
@@ -54,7 +53,7 @@ INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPl
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (349,0,30,55,10,0,'');
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (389,0,8,18,10,0,'');
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (409,230,50,0,40,0,'instance_molten_core');
-INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (429,0,45,60,5,0,'instance_dire_maul');
+INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (429,0,45,60,5,0,'');
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (469,229,60,0,40,0,'instance_blackwing_lair');
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (489,0,10,0,50,7200,'');
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (509,0,50,0,20,0,'instance_ruins_of_ahnqiraj');
@@ -91,7 +90,6 @@ INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPl
 INSERT INTO `instance_template` (`map`, `parent`, `levelMin`, `levelMax`, `maxPlayers`, `reset_delay`, `ScriptName`) VALUES (585,0,65,0,5,0,'instance_magisters_terrace');
 /*!40000 ALTER TABLE `instance_template` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

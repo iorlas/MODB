@@ -25,7 +25,6 @@ CREATE TABLE `game_event_creature` (
 
 LOCK TABLES `game_event_creature` WRITE;
 /*!40000 ALTER TABLE `game_event_creature` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (113,18);
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (518,20);
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (1102,7);
@@ -2500,7 +2499,6 @@ INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (151038,60);
 INSERT INTO `game_event_creature` (`guid`, `event`) VALUES (151039,59);
 /*!40000 ALTER TABLE `game_event_creature` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

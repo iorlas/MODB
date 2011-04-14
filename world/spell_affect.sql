@@ -26,7 +26,6 @@ CREATE TABLE `spell_affect` (
 
 LOCK TABLES `spell_affect` WRITE;
 /*!40000 ALTER TABLE `spell_affect` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (5420,2,17669763891408);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (8875,1,4398046511104);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (11069,0,1);
@@ -1228,7 +1227,6 @@ INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (4683
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (46851,0,281474976710656);
 /*!40000 ALTER TABLE `spell_affect` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -39,7 +39,6 @@ CREATE TABLE `areatrigger_teleport` (
 
 LOCK TABLES `areatrigger_teleport` WRITE;
 /*!40000 ALTER TABLE `areatrigger_teleport` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `areatrigger_teleport` (`id`, `name`, `required_level`, `required_item`, `required_item2`, `heroic_key`, `heroic_key2`, `required_quest_done`, `required_quest_done_heroic`, `required_failed_text`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES (45,'Scarlet Monastery - Graveyard (Entrance)',20,0,0,0,0,0,0,NULL,189,1688.99,1053.48,18.6775,0.00117);
 INSERT INTO `areatrigger_teleport` (`id`, `name`, `required_level`, `required_item`, `required_item2`, `heroic_key`, `heroic_key2`, `required_quest_done`, `required_quest_done_heroic`, `required_failed_text`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES (78,'DeadMines Entrance',10,0,0,0,0,0,0,NULL,36,-16.4,-383.07,61.78,1.86);
 INSERT INTO `areatrigger_teleport` (`id`, `name`, `required_level`, `required_item`, `required_item2`, `heroic_key`, `heroic_key2`, `required_quest_done`, `required_quest_done_heroic`, `required_failed_text`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES (101,'Stormwind Stockades Entrance',15,0,0,0,0,0,0,NULL,34,54.23,0.28,-18.34,6.26);
@@ -203,7 +202,6 @@ INSERT INTO `areatrigger_teleport` (`id`, `name`, `required_level`, `required_it
 INSERT INTO `areatrigger_teleport` (`id`, `name`, `required_level`, `required_item`, `required_item2`, `heroic_key`, `heroic_key2`, `required_quest_done`, `required_quest_done_heroic`, `required_failed_text`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES (4891,'Sunwell Plateau (Exit)',0,0,0,0,0,0,0,NULL,530,12560.8,-6774.59,15.08,6.25);
 /*!40000 ALTER TABLE `areatrigger_teleport` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

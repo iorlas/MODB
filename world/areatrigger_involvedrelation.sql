@@ -25,7 +25,6 @@ CREATE TABLE `areatrigger_involvedrelation` (
 
 LOCK TABLES `areatrigger_involvedrelation` WRITE;
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `areatrigger_involvedrelation` (`id`, `quest`) VALUES (78,155);
 INSERT INTO `areatrigger_involvedrelation` (`id`, `quest`) VALUES (87,76);
 INSERT INTO `areatrigger_involvedrelation` (`id`, `quest`) VALUES (88,62);
@@ -74,7 +73,6 @@ INSERT INTO `areatrigger_involvedrelation` (`id`, `quest`) VALUES (4581,10750);
 INSERT INTO `areatrigger_involvedrelation` (`id`, `quest`) VALUES (4588,10772);
 /*!40000 ALTER TABLE `areatrigger_involvedrelation` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

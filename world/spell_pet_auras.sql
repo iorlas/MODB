@@ -26,7 +26,6 @@ CREATE TABLE `spell_pet_auras` (
 
 LOCK TABLES `spell_pet_auras` WRITE;
 /*!40000 ALTER TABLE `spell_pet_auras` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `spell_pet_auras` (`spell`, `pet`, `aura`) VALUES (19028,0,25228);
 INSERT INTO `spell_pet_auras` (`spell`, `pet`, `aura`) VALUES (19578,0,19579);
 INSERT INTO `spell_pet_auras` (`spell`, `pet`, `aura`) VALUES (20895,0,24529);
@@ -63,7 +62,6 @@ INSERT INTO `spell_pet_auras` (`spell`, `pet`, `aura`) VALUES (35692,0,35696);
 INSERT INTO `spell_pet_auras` (`spell`, `pet`, `aura`) VALUES (35693,0,35696);
 /*!40000 ALTER TABLE `spell_pet_auras` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

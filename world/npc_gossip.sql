@@ -25,7 +25,6 @@ CREATE TABLE `npc_gossip` (
 
 LOCK TABLES `npc_gossip` WRITE;
 /*!40000 ALTER TABLE `npc_gossip` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES (2,2282);
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES (9,2493);
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES (29,5054);
@@ -2536,7 +2535,6 @@ INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES (96986,10010);
 INSERT INTO `npc_gossip` (`npc_guid`, `textid`) VALUES (96987,10010);
 /*!40000 ALTER TABLE `npc_gossip` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -25,7 +25,6 @@ CREATE TABLE `scripted_areatrigger` (
 
 LOCK TABLES `scripted_areatrigger` WRITE;
 /*!40000 ALTER TABLE `scripted_areatrigger` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (522,'at_twiggy_flathead');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (1447,'at_zulfarrak');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (1526,'at_ring_of_law');
@@ -38,8 +37,6 @@ INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (3548,'at_chil
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (3549,'at_childrens_week_spot');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (3550,'at_childrens_week_spot');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (3552,'at_childrens_week_spot');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (3958,'at_zulgurub');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (3960,'at_zulgurub');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4016,'at_shade_of_eranikus');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4112,'at_naxxramas');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4113,'at_naxxramas');
@@ -47,24 +44,9 @@ INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4497,'at_comm
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4560,'at_legion_teleporter');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4591,'at_coilfang_waterfall');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4752,'at_nats_landing');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4778,'at_ancient_male_vrykul');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4853,'at_madrigosa');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4871,'at_warsong_farms');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4872,'at_warsong_farms');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4873,'at_warsong_farms');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4991,'at_skadi');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5030,'at_spearborn_encampment');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5046,'at_waygate');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5047,'at_waygate');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5108,'at_stormwright_shelf');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5140,'at_svala_intro');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5284,'at_aldurthar_gate');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5285,'at_aldurthar_gate');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5286,'at_aldurthar_gate');
-INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (5287,'at_aldurthar_gate');
 /*!40000 ALTER TABLE `scripted_areatrigger` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -32,7 +32,6 @@ CREATE TABLE `pickpocketing_loot_template` (
 
 LOCK TABLES `pickpocketing_loot_template` WRITE;
 /*!40000 ALTER TABLE `pickpocketing_loot_template` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (3,929,2.449,0,1,1,0,0,0);
 INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (3,1206,0.8163,0,1,1,0,0,0);
 INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (3,4606,5.7143,0,1,1,0,0,0);
@@ -10633,7 +10632,6 @@ INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance
 INSERT INTO `pickpocketing_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (24919,29570,10.1649,0,1,1,0,0,0);
 /*!40000 ALTER TABLE `pickpocketing_loot_template` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

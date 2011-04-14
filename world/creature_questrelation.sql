@@ -25,7 +25,6 @@ CREATE TABLE `creature_questrelation` (
 
 LOCK TABLES `creature_questrelation` WRITE;
 /*!40000 ALTER TABLE `creature_questrelation` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES (196,33);
 INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES (197,7);
 INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES (197,15);
@@ -5483,7 +5482,6 @@ INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES (27584,12318);
 INSERT INTO `creature_questrelation` (`id`, `quest`) VALUES (28126,12515);
 /*!40000 ALTER TABLE `creature_questrelation` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -25,7 +25,6 @@ CREATE TABLE `scripted_event_id` (
 
 LOCK TABLES `scripted_event_id` WRITE;
 /*!40000 ALTER TABLE `scripted_event_id` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `scripted_event_id` (`id`, `ScriptName`) VALUES (2228,'event_spell_altar_boss_aggro');
 INSERT INTO `scripted_event_id` (`id`, `ScriptName`) VALUES (2268,'event_spell_altar_boss_aggro');
 INSERT INTO `scripted_event_id` (`id`, `ScriptName`) VALUES (2488,'event_go_zulfarrak_gong');
@@ -37,7 +36,6 @@ INSERT INTO `scripted_event_id` (`id`, `ScriptName`) VALUES (13515,'event_spell_
 INSERT INTO `scripted_event_id` (`id`, `ScriptName`) VALUES (13516,'event_spell_soul_captured_credit');
 /*!40000 ALTER TABLE `scripted_event_id` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

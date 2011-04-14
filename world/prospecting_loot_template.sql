@@ -32,7 +32,6 @@ CREATE TABLE `prospecting_loot_template` (
 
 LOCK TABLES `prospecting_loot_template` WRITE;
 /*!40000 ALTER TABLE `prospecting_loot_template` DISABLE KEYS */;
-set autocommit=0;
 INSERT INTO `prospecting_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (2770,774,50,2,1,1,0,0,0);
 INSERT INTO `prospecting_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (2770,818,50,2,1,1,0,0,0);
 INSERT INTO `prospecting_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (2770,1210,10,1,1,1,0,0,0);
@@ -95,7 +94,6 @@ INSERT INTO `prospecting_loot_template` (`entry`, `item`, `ChanceOrQuestChance`,
 INSERT INTO `prospecting_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (23425,24243,100,0,1,1,0,0,0);
 /*!40000 ALTER TABLE `prospecting_loot_template` ENABLE KEYS */;
 UNLOCK TABLES;
-commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
