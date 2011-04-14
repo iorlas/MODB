@@ -1,7 +1,7 @@
 WTF?
 ====
 This is a WoW DB for Mangos One "trunk" version("bleeding edge").
-It based on [TBC-DB][tbcdb], old project, which oriented on World of Warcraft The Burning Crusade database. Sadly, it has no activity and huge amount of garbage, dirty things. So, we need to improve it.
+It based on [TBC-DB](http://tbc-db.sourceforge.net/), old project, which oriented on World of Warcraft The Burning Crusade database. Sadly, it has no activity and huge amount of garbage, dirty things. So, we need to improve it.
 
 All DB changes are tracked by GIT and hosted on https://github.com/iorlas/MODB .
 For good version controlling, it has some nice scripts, which makes updates easier.
@@ -44,7 +44,4 @@ Copyright (C) 2005-2011 MaNGOS project <http://getmangos.com/>
   so, delete this exception statement from your version.
 
 Comments are welcome.
-
-    - theluda <theluda@getmangos.com>
-
-[tbcdb]: http://tbc-db.sourceforge.net/
+      theluda <theluda@getmangos.com>
