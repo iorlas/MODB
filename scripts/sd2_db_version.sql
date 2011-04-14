@@ -23,9 +23,11 @@ CREATE TABLE `sd2_db_version` (
 
 LOCK TABLES `sd2_db_version` WRITE;
 /*!40000 ALTER TABLE `sd2_db_version` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `sd2_db_version` (`version`) VALUES ('ScriptDev2 (for MaNGOS 11316+) ');
 /*!40000 ALTER TABLE `sd2_db_version` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
