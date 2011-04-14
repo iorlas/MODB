@@ -30,6 +30,7 @@ CREATE TABLE `creature_ai_summons` (
 
 LOCK TABLES `creature_ai_summons` WRITE;
 /*!40000 ALTER TABLE `creature_ai_summons` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES (1,8074.84,-3840,690.061,4.6,180000,'10727');
 INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES (2,-472.02,105.823,-94.6299,0.0301925,300000,'5721');
 INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES (3,-467.099,85.2944,-94.7318,3.95326,300000,'5720');
@@ -47,6 +48,7 @@ INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z
 INSERT INTO `creature_ai_summons` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `comment`) VALUES (15,1783.9,745.005,16.111,6.03896,18000000,'8138');
 /*!40000 ALTER TABLE `creature_ai_summons` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

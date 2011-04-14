@@ -28,6 +28,7 @@ CREATE TABLE `petcreateinfo_spell` (
 
 LOCK TABLES `petcreateinfo_spell` WRITE;
 /*!40000 ALTER TABLE `petcreateinfo_spell` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `petcreateinfo_spell` (`entry`, `Spell1`, `Spell2`, `Spell3`, `Spell4`) VALUES (416,3110,0,0,0);
 INSERT INTO `petcreateinfo_spell` (`entry`, `Spell1`, `Spell2`, `Spell3`, `Spell4`) VALUES (417,19505,0,0,0);
 INSERT INTO `petcreateinfo_spell` (`entry`, `Spell1`, `Spell2`, `Spell3`, `Spell4`) VALUES (510,31707,33395,0,0);
@@ -38,6 +39,7 @@ INSERT INTO `petcreateinfo_spell` (`entry`, `Spell1`, `Spell2`, `Spell3`, `Spell
 INSERT INTO `petcreateinfo_spell` (`entry`, `Spell1`, `Spell2`, `Spell3`, `Spell4`) VALUES (15429,25163,0,0,0);
 /*!40000 ALTER TABLE `petcreateinfo_spell` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

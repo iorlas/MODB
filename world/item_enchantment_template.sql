@@ -26,6 +26,7 @@ CREATE TABLE `item_enchantment_template` (
 
 LOCK TABLES `item_enchantment_template` WRITE;
 /*!40000 ALTER TABLE `item_enchantment_template` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES (61,6,7.73);
 INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES (61,8,7.31);
 INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES (61,9,8.02);
@@ -28436,6 +28437,7 @@ INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES (8675
 INSERT INTO `item_enchantment_template` (`entry`, `ench`, `chance`) VALUES (8675,2154,11.98);
 /*!40000 ALTER TABLE `item_enchantment_template` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

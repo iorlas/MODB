@@ -26,6 +26,7 @@ CREATE TABLE `game_graveyard_zone` (
 
 LOCK TABLES `game_graveyard_zone` WRITE;
 /*!40000 ALTER TABLE `game_graveyard_zone` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `game_graveyard_zone` (`id`, `ghost_zone`, `faction`) VALUES (3,10,469);
 INSERT INTO `game_graveyard_zone` (`id`, `ghost_zone`, `faction`) VALUES (4,40,0);
 INSERT INTO `game_graveyard_zone` (`id`, `ghost_zone`, `faction`) VALUES (4,1581,0);
@@ -545,6 +546,7 @@ INSERT INTO `game_graveyard_zone` (`id`, `ghost_zone`, `faction`) VALUES (1293,4
 INSERT INTO `game_graveyard_zone` (`id`, `ghost_zone`, `faction`) VALUES (1298,3519,0);
 /*!40000 ALTER TABLE `game_graveyard_zone` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

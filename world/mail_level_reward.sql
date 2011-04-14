@@ -27,6 +27,7 @@ CREATE TABLE `mail_level_reward` (
 
 LOCK TABLES `mail_level_reward` WRITE;
 /*!40000 ALTER TABLE `mail_level_reward` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `mail_level_reward` (`level`, `raceMask`, `mailTemplateId`, `senderEntry`) VALUES (40,1,224,4732);
 INSERT INTO `mail_level_reward` (`level`, `raceMask`, `mailTemplateId`, `senderEntry`) VALUES (40,2,231,4752);
 INSERT INTO `mail_level_reward` (`level`, `raceMask`, `mailTemplateId`, `senderEntry`) VALUES (40,4,226,4772);
@@ -39,6 +40,7 @@ INSERT INTO `mail_level_reward` (`level`, `raceMask`, `mailTemplateId`, `senderE
 INSERT INTO `mail_level_reward` (`level`, `raceMask`, `mailTemplateId`, `senderEntry`) VALUES (40,1024,227,20914);
 /*!40000 ALTER TABLE `mail_level_reward` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

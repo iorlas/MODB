@@ -39,6 +39,7 @@ CREATE TABLE `spell_scripts` (
 
 LOCK TABLES `spell_scripts` WRITE;
 /*!40000 ALTER TABLE `spell_scripts` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `spell_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (25650,0,6,530,0,0,0,0,0,0,0,0,-589.976,4078.31,143.258,4.48305,'');
 INSERT INTO `spell_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (25652,0,6,530,0,0,0,0,0,0,0,0,-594,4079.26,93.85,5.28,'');
 INSERT INTO `spell_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (25652,0,6,530,0,0,0,0,0,0,0,0,-589.976,4078.31,143.258,4.48305,'');
@@ -50,6 +51,7 @@ INSERT INTO `spell_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, 
 INSERT INTO `spell_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (37752,1,5,46,33554434,0,0,0,0,0,0,0,0,0,0,0,'');
 /*!40000 ALTER TABLE `spell_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

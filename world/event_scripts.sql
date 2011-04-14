@@ -39,6 +39,7 @@ CREATE TABLE `event_scripts` (
 
 LOCK TABLES `event_scripts` WRITE;
 /*!40000 ALTER TABLE `event_scripts` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (259,2,10,1770,300000,0,0,0,0,0,0,0,881.63,1230.37,47.83,3.1,'');
 INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (2488,2,10,7273,300000,0,0,0,0,0,0,0,1665.56,1187.32,6.64,3.9,'');
 INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (1785,0,10,5676,180000,0,0,0,0,0,0,0,1704.61,41.9147,-63.8433,0.435896,'');
@@ -447,6 +448,7 @@ INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, 
 INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (16547,0,10,24844,300000,0,0,0,0,0,0,0,209.912,-318.697,14.005,1.181,'');
 /*!40000 ALTER TABLE `event_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

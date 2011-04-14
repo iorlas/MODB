@@ -25,6 +25,7 @@ CREATE TABLE `gameobject_involvedrelation` (
 
 LOCK TABLES `gameobject_involvedrelation` WRITE;
 /*!40000 ALTER TABLE `gameobject_involvedrelation` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES (31,94);
 INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES (33,140);
 INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES (34,139);
@@ -244,6 +245,7 @@ INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES (187929,11746);
 INSERT INTO `gameobject_involvedrelation` (`id`, `quest`) VALUES (187945,11762);
 /*!40000 ALTER TABLE `gameobject_involvedrelation` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

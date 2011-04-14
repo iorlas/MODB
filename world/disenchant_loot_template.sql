@@ -32,6 +32,7 @@ CREATE TABLE `disenchant_loot_template` (
 
 LOCK TABLES `disenchant_loot_template` WRITE;
 /*!40000 ALTER TABLE `disenchant_loot_template` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (1,10938,20,1,1,2,0,0,0);
 INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (1,10940,80,1,1,2,0,0,0);
 INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (2,10939,20,1,1,2,0,0,0);
@@ -136,6 +137,7 @@ INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, 
 INSERT INTO `disenchant_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (67,22450,100,1,1,2,0,0,0);
 /*!40000 ALTER TABLE `disenchant_loot_template` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

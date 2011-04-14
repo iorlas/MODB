@@ -25,6 +25,7 @@ CREATE TABLE `gameobject_questrelation` (
 
 LOCK TABLES `gameobject_questrelation` WRITE;
 /*!40000 ALTER TABLE `gameobject_questrelation` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `gameobject_questrelation` (`id`, `quest`) VALUES (31,248);
 INSERT INTO `gameobject_questrelation` (`id`, `quest`) VALUES (31,249);
 INSERT INTO `gameobject_questrelation` (`id`, `quest`) VALUES (34,140);
@@ -305,6 +306,7 @@ INSERT INTO `gameobject_questrelation` (`id`, `quest`) VALUES (187273,1284);
 INSERT INTO `gameobject_questrelation` (`id`, `quest`) VALUES (189990,12020);
 /*!40000 ALTER TABLE `gameobject_questrelation` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

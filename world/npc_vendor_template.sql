@@ -28,8 +28,10 @@ CREATE TABLE `npc_vendor_template` (
 
 LOCK TABLES `npc_vendor_template` WRITE;
 /*!40000 ALTER TABLE `npc_vendor_template` DISABLE KEYS */;
+set autocommit=0;
 /*!40000 ALTER TABLE `npc_vendor_template` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

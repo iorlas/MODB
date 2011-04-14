@@ -25,12 +25,14 @@ CREATE TABLE `spell_proc_item_enchant` (
 
 LOCK TABLES `spell_proc_item_enchant` WRITE;
 /*!40000 ALTER TABLE `spell_proc_item_enchant` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `spell_proc_item_enchant` (`entry`, `ppmRate`) VALUES (8034,9);
 INSERT INTO `spell_proc_item_enchant` (`entry`, `ppmRate`) VALUES (13897,6);
 INSERT INTO `spell_proc_item_enchant` (`entry`, `ppmRate`) VALUES (20004,6);
 INSERT INTO `spell_proc_item_enchant` (`entry`, `ppmRate`) VALUES (20005,1.6);
 /*!40000 ALTER TABLE `spell_proc_item_enchant` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

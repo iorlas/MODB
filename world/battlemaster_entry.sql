@@ -25,6 +25,7 @@ CREATE TABLE `battlemaster_entry` (
 
 LOCK TABLES `battlemaster_entry` WRITE;
 /*!40000 ALTER TABLE `battlemaster_entry` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `battlemaster_entry` (`entry`, `bg_template`) VALUES (347,1);
 INSERT INTO `battlemaster_entry` (`entry`, `bg_template`) VALUES (857,3);
 INSERT INTO `battlemaster_entry` (`entry`, `bg_template`) VALUES (907,3);
@@ -98,6 +99,7 @@ INSERT INTO `battlemaster_entry` (`entry`, `bg_template`) VALUES (22015,7);
 INSERT INTO `battlemaster_entry` (`entry`, `bg_template`) VALUES (25991,6);
 /*!40000 ALTER TABLE `battlemaster_entry` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

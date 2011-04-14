@@ -26,6 +26,7 @@ CREATE TABLE `transports` (
 
 LOCK TABLES `transports` WRITE;
 /*!40000 ALTER TABLE `transports` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `transports` (`entry`, `name`, `period`) VALUES (20808,'Ratchet and Booty Bay',231236);
 INSERT INTO `transports` (`entry`, `name`, `period`) VALUES (164871,'Orgrimmar and Undercity',239334);
 INSERT INTO `transports` (`entry`, `name`, `period`) VALUES (175080,'Grom\'Gol Base Camp and Orgrimmar',248990);
@@ -37,6 +38,7 @@ INSERT INTO `transports` (`entry`, `name`, `period`) VALUES (177233,'Forgotton C
 INSERT INTO `transports` (`entry`, `name`, `period`) VALUES (181646,'Azuremyst and Auberdine',238707);
 /*!40000 ALTER TABLE `transports` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

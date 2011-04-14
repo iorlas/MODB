@@ -25,6 +25,7 @@ CREATE TABLE `skill_fishing_base_level` (
 
 LOCK TABLES `skill_fishing_base_level` WRITE;
 /*!40000 ALTER TABLE `skill_fishing_base_level` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES (1,-70);
 INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES (8,130);
 INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES (10,55);
@@ -106,6 +107,7 @@ INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES (3859,405);
 INSERT INTO `skill_fishing_base_level` (`entry`, `skill`) VALUES (4080,355);
 /*!40000 ALTER TABLE `skill_fishing_base_level` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

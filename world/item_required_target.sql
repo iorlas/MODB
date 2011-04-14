@@ -26,6 +26,7 @@ CREATE TABLE `item_required_target` (
 
 LOCK TABLES `item_required_target` WRITE;
 /*!40000 ALTER TABLE `item_required_target` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `item_required_target` (`entry`, `type`, `targetEntry`) VALUES (3912,1,2530);
 INSERT INTO `item_required_target` (`entry`, `type`, `targetEntry`) VALUES (4479,1,2762);
 INSERT INTO `item_required_target` (`entry`, `type`, `targetEntry`) VALUES (4480,1,2761);
@@ -84,6 +85,7 @@ INSERT INTO `item_required_target` (`entry`, `type`, `targetEntry`) VALUES (3425
 INSERT INTO `item_required_target` (`entry`, `type`, `targetEntry`) VALUES (34368,2,24972);
 /*!40000 ALTER TABLE `item_required_target` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

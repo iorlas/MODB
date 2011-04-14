@@ -30,6 +30,7 @@ CREATE TABLE `game_tele` (
 
 LOCK TABLES `game_tele` WRITE;
 /*!40000 ALTER TABLE `game_tele` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1,1400.61,-1493.87,54.7844,4.08661,0,'RuinsOfAndorhal');
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (2,1728.65,-1602.25,63.429,1.6558,0,'WesternPlaguelands');
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (3,659.762,-959.316,164.404,0.433716,0,'Strahnbrad');
@@ -453,6 +454,7 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (422,1784.23,924.563,15.581,3.5177,580,'swp');
 /*!40000 ALTER TABLE `game_tele` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

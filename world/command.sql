@@ -26,6 +26,7 @@ CREATE TABLE `command` (
 
 LOCK TABLES `command` WRITE;
 /*!40000 ALTER TABLE `command` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `command` (`name`, `security`, `help`) VALUES ('account',0,'Syntax: .account\r\n\r\nDisplay the access level of your account.');
 INSERT INTO `command` (`name`, `security`, `help`) VALUES ('account characters',3,'Syntax: .account characters [#accountId|$accountName]\r\n\r\nShow list all characters for account selected by provided #accountId or $accountName, or for selected player in game.');
 INSERT INTO `command` (`name`, `security`, `help`) VALUES ('account create',4,'Syntax: .account create $account $password\r\n\r\nCreate account and set password to it.');
@@ -320,6 +321,7 @@ INSERT INTO `command` (`name`, `security`, `help`) VALUES ('wp modify',2,'Syntax
 INSERT INTO `command` (`name`, `security`, `help`) VALUES ('wp show',2,'Syntax: .wp show [#creature_guid or Select a Creature]\r\non\r\nfirst\r\nlast\r\noff\r\ninfo\r\n\r\nFor using info you have to do first show on and than select a Visual-Waypoint and do the show info!');
 /*!40000 ALTER TABLE `command` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -26,6 +26,7 @@ CREATE TABLE `spell_learn_spell` (
 
 LOCK TABLES `spell_learn_spell` WRITE;
 /*!40000 ALTER TABLE `spell_learn_spell` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `spell_learn_spell` (`entry`, `SpellID`, `Active`) VALUES (2842,8681,1);
 INSERT INTO `spell_learn_spell` (`entry`, `SpellID`, `Active`) VALUES (5149,1853,1);
 INSERT INTO `spell_learn_spell` (`entry`, `SpellID`, `Active`) VALUES (5149,14922,1);
@@ -45,6 +46,7 @@ INSERT INTO `spell_learn_spell` (`entry`, `SpellID`, `Active`) VALUES (34767,333
 INSERT INTO `spell_learn_spell` (`entry`, `SpellID`, `Active`) VALUES (34769,33388,1);
 /*!40000 ALTER TABLE `spell_learn_spell` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

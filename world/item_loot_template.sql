@@ -32,6 +32,7 @@ CREATE TABLE `item_loot_template` (
 
 LOCK TABLES `item_loot_template` WRITE;
 /*!40000 ALTER TABLE `item_loot_template` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (4632,789,0.3,0,1,1,0,0,0);
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (4632,804,1.7,0,1,1,0,0,0);
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (4632,857,0.8,0,1,1,0,0,0);
@@ -4781,6 +4782,7 @@ INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `group
 INSERT INTO `item_loot_template` (`entry`, `item`, `ChanceOrQuestChance`, `groupid`, `mincountOrRef`, `maxcount`, `lootcondition`, `condition_value1`, `condition_value2`) VALUES (35945,32249,0.8,1,1,1,0,0,0);
 /*!40000 ALTER TABLE `item_loot_template` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

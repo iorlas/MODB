@@ -27,6 +27,7 @@ CREATE TABLE `creature_model_race` (
 
 LOCK TABLES `creature_model_race` WRITE;
 /*!40000 ALTER TABLE `creature_model_race` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `creature_model_race` (`modelid`, `racemask`, `creature_entry`, `modelid_racial`) VALUES (892,690,0,8571);
 INSERT INTO `creature_model_race` (`modelid`, `racemask`, `creature_entry`, `modelid_racial`) VALUES (2281,690,0,2289);
 INSERT INTO `creature_model_race` (`modelid`, `racemask`, `creature_entry`, `modelid_racial`) VALUES (15374,690,0,15375);
@@ -34,6 +35,7 @@ INSERT INTO `creature_model_race` (`modelid`, `racemask`, `creature_entry`, `mod
 INSERT INTO `creature_model_race` (`modelid`, `racemask`, `creature_entry`, `modelid_racial`) VALUES (21243,690,0,21244);
 /*!40000 ALTER TABLE `creature_model_race` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

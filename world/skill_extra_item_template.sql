@@ -27,6 +27,7 @@ CREATE TABLE `skill_extra_item_template` (
 
 LOCK TABLES `skill_extra_item_template` WRITE;
 /*!40000 ALTER TABLE `skill_extra_item_template` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `skill_extra_item_template` (`spellId`, `requiredSpecialization`, `additionalCreateChance`, `additionalMaxNum`) VALUES (2329,28677,14,4);
 INSERT INTO `skill_extra_item_template` (`spellId`, `requiredSpecialization`, `additionalCreateChance`, `additionalMaxNum`) VALUES (2331,28675,14,4);
 INSERT INTO `skill_extra_item_template` (`spellId`, `requiredSpecialization`, `additionalCreateChance`, `additionalMaxNum`) VALUES (2332,28675,14,4);
@@ -189,6 +190,7 @@ INSERT INTO `skill_extra_item_template` (`spellId`, `requiredSpecialization`, `a
 INSERT INTO `skill_extra_item_template` (`spellId`, `requiredSpecialization`, `additionalCreateChance`, `additionalMaxNum`) VALUES (45061,28675,14,4);
 /*!40000 ALTER TABLE `skill_extra_item_template` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

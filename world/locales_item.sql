@@ -40,8 +40,10 @@ CREATE TABLE `locales_item` (
 
 LOCK TABLES `locales_item` WRITE;
 /*!40000 ALTER TABLE `locales_item` DISABLE KEYS */;
+set autocommit=0;
 /*!40000 ALTER TABLE `locales_item` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

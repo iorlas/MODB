@@ -30,6 +30,7 @@ CREATE TABLE `points_of_interest` (
 
 LOCK TABLES `points_of_interest` WRITE;
 /*!40000 ALTER TABLE `points_of_interest` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES (1,-9459,42.0805,6,6,0,'Lion\'s Pride Inn');
 INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES (2,-9471,33.4441,6,6,0,'Zaldimar Wefhellt');
 INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES (3,-9469,108.053,6,6,0,'Brother Wilhelm');
@@ -421,6 +422,7 @@ INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `i
 INSERT INTO `points_of_interest` (`entry`, `x`, `y`, `icon`, `flags`, `data`, `icon_name`) VALUES (442,-3725.4,-11688.4,6,6,0,'Arena Battlemaster Exodar');
 /*!40000 ALTER TABLE `points_of_interest` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

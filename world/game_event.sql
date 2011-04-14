@@ -30,6 +30,7 @@ CREATE TABLE `game_event` (
 
 LOCK TABLES `game_event` WRITE;
 /*!40000 ALTER TABLE `game_event` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`) VALUES (1,'2011-06-20 23:00:00','2020-12-30 23:00:00',525600,20160,341,'Midsummer Fire Festival');
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`) VALUES (2,'2011-12-15 06:00:00','2020-12-30 23:00:00',525600,25920,141,'Feast of Winter Veil');
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`) VALUES (3,'2011-02-06 11:01:00','2020-12-30 23:00:00',131040,10078,376,'Darkmoon Faire (Terokkar Forest)');
@@ -72,6 +73,7 @@ INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `lengt
 INSERT INTO `game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`) VALUES (60,'2011-01-01 01:00:00','2020-12-30 23:00:00',240,5,0,'World\'s End Tavern - L70ETC Concert');
 /*!40000 ALTER TABLE `game_event` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -26,6 +26,7 @@ CREATE TABLE `spell_script_target` (
 
 LOCK TABLES `spell_script_target` WRITE;
 /*!40000 ALTER TABLE `spell_script_target` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES (7035,1,4251);
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES (7036,1,4252);
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES (7393,1,15275);
@@ -526,6 +527,7 @@ INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES (47129
 INSERT INTO `spell_script_target` (`entry`, `type`, `targetEntry`) VALUES (47129,1,26355);
 /*!40000 ALTER TABLE `spell_script_target` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

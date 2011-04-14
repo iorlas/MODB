@@ -26,6 +26,7 @@ CREATE TABLE `creature_battleground` (
 
 LOCK TABLES `creature_battleground` WRITE;
 /*!40000 ALTER TABLE `creature_battleground` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES (150000,2,0);
 INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES (150001,2,0);
 INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES (150002,0,3);
@@ -936,6 +937,7 @@ INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES (151030,
 INSERT INTO `creature_battleground` (`guid`, `event1`, `event2`) VALUES (151031,46,1);
 /*!40000 ALTER TABLE `creature_battleground` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

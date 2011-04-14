@@ -39,6 +39,7 @@ CREATE TABLE `gameobject_scripts` (
 
 LOCK TABLES `gameobject_scripts` WRITE;
 /*!40000 ALTER TABLE `gameobject_scripts` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `gameobject_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (44811,0,11,15013,15,0,0,0,0,0,0,0,0,0,0,0,'');
 INSERT INTO `gameobject_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (44809,0,11,15012,15,0,0,0,0,0,0,0,0,0,0,0,'');
 INSERT INTO `gameobject_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (11894,0,11,11876,300,0,0,0,0,0,0,0,0,0,0,0,'');
@@ -92,6 +93,7 @@ INSERT INTO `gameobject_scripts` (`id`, `delay`, `command`, `datalong`, `datalon
 INSERT INTO `gameobject_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES (45625,0,11,45626,15,0,0,0,0,0,0,0,0,0,0,0,'');
 /*!40000 ALTER TABLE `gameobject_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

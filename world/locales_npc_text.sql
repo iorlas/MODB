@@ -152,8 +152,10 @@ CREATE TABLE `locales_npc_text` (
 
 LOCK TABLES `locales_npc_text` WRITE;
 /*!40000 ALTER TABLE `locales_npc_text` DISABLE KEYS */;
+set autocommit=0;
 /*!40000 ALTER TABLE `locales_npc_text` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

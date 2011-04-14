@@ -25,6 +25,7 @@ CREATE TABLE `exploration_basexp` (
 
 LOCK TABLES `exploration_basexp` WRITE;
 /*!40000 ALTER TABLE `exploration_basexp` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES (0,0);
 INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES (1,5);
 INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES (2,15);
@@ -98,6 +99,7 @@ INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES (69,1230);
 INSERT INTO `exploration_basexp` (`level`, `basexp`) VALUES (70,1300);
 /*!40000 ALTER TABLE `exploration_basexp` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

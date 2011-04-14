@@ -25,6 +25,7 @@ CREATE TABLE `scripted_areatrigger` (
 
 LOCK TABLES `scripted_areatrigger` WRITE;
 /*!40000 ALTER TABLE `scripted_areatrigger` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (522,'at_twiggy_flathead');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (1447,'at_zulfarrak');
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (1526,'at_ring_of_law');
@@ -47,6 +48,7 @@ INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4752,'at_nats
 INSERT INTO `scripted_areatrigger` (`entry`, `ScriptName`) VALUES (4853,'at_madrigosa');
 /*!40000 ALTER TABLE `scripted_areatrigger` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

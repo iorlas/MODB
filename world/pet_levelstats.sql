@@ -33,6 +33,7 @@ CREATE TABLE `pet_levelstats` (
 
 LOCK TABLES `pet_levelstats` WRITE;
 /*!40000 ALTER TABLE `pet_levelstats` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES (1,1,42,1,20,22,20,22,20,20);
 INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES (1,2,55,1,21,23,21,23,20,20);
 INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES (1,3,71,1,46,24,21,24,20,21);
@@ -1505,6 +1506,7 @@ INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, 
 INSERT INTO `pet_levelstats` (`creature_entry`, `level`, `hp`, `mana`, `armor`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES (26101,70,11352,3155,6792,152,39,102,334,360);
 /*!40000 ALTER TABLE `pet_levelstats` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

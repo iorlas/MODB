@@ -32,6 +32,7 @@ CREATE TABLE `spell_area` (
 
 LOCK TABLES `spell_area` WRITE;
 /*!40000 ALTER TABLE `spell_area` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES (33836,3803,0,0,0,0,0,0,0);
 INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES (35480,2367,0,0,0,0,690,0,1);
 INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES (35481,2367,0,0,0,0,690,1,1);
@@ -119,6 +120,7 @@ INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, 
 INSERT INTO `spell_area` (`spell`, `area`, `quest_start`, `quest_start_active`, `quest_end`, `aura_spell`, `racemask`, `gender`, `autocast`) VALUES (46839,4075,0,0,0,0,0,2,0);
 /*!40000 ALTER TABLE `spell_area` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -25,9 +25,11 @@ CREATE TABLE `db_version` (
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1120_11335_02_mangos_mangos_string`) VALUES ('TBC-DB 1.0.4 \'Moving Forward\' for MaNGOS ONE s0657','ACID 2.0.5 - Full Release for MaNGOS One (2.4.3 Client)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

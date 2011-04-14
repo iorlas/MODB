@@ -27,6 +27,7 @@ CREATE TABLE `player_classlevelstats` (
 
 LOCK TABLES `player_classlevelstats` WRITE;
 /*!40000 ALTER TABLE `player_classlevelstats` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VALUES (1,1,20,0);
 INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VALUES (1,2,29,0);
 INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VALUES (1,3,38,0);
@@ -659,6 +660,7 @@ INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VA
 INSERT INTO `player_classlevelstats` (`class`, `level`, `basehp`, `basemana`) VALUES (11,70,3614,2370);
 /*!40000 ALTER TABLE `player_classlevelstats` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

@@ -25,6 +25,7 @@ CREATE TABLE `game_event_gameobject` (
 
 LOCK TABLES `game_event_gameobject` WRITE;
 /*!40000 ALTER TABLE `game_event_gameobject` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (1,1);
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (3,1);
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (6,20);
@@ -15806,6 +15807,7 @@ INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (54947,12);
 INSERT INTO `game_event_gameobject` (`guid`, `event`) VALUES (54948,12);
 /*!40000 ALTER TABLE `game_event_gameobject` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

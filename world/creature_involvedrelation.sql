@@ -25,6 +25,7 @@ CREATE TABLE `creature_involvedrelation` (
 
 LOCK TABLES `creature_involvedrelation` WRITE;
 /*!40000 ALTER TABLE `creature_involvedrelation` DISABLE KEYS */;
+set autocommit=0;
 INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (196,33);
 INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (196,5261);
 INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (197,7);
@@ -5711,6 +5712,7 @@ INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (27216,12191);
 INSERT INTO `creature_involvedrelation` (`id`, `quest`) VALUES (28126,12515);
 /*!40000 ALTER TABLE `creature_involvedrelation` ENABLE KEYS */;
 UNLOCK TABLES;
+commit;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
