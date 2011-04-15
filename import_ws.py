@@ -92,7 +92,7 @@ for table_dump in world_dumps_list:
         print 'Error on importing of the table file "%s", result code: %s'%(table_dump, res_code)
         exit(1)
     dprint('.', ' done\n')
-dprint(' done', 'Done importing WORLD database')
+dprint(' done\n', 'Done importing WORLD database\n')
 
 
 dprint("Import of SCRIPTS database...", "Import of SCRIPTS database...\n")
@@ -103,4 +103,4 @@ for table_dump in scripts_dumps_list:
         print 'Error on importing of the table file "%s", result code: %s'%(table_dump, res_code)
         exit(1)
     dprint('.', ' done\n')
-dprint(' done', 'Done importing SCRIPTS database')
+dprint(' done\n', 'Done importing SCRIPTS database\n')
