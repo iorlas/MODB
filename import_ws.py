@@ -66,7 +66,7 @@ Some variables cannot be found, make sure %s file contains this-like struct:
 
 #make queries
 mysql_auth_string = '--password=%s -u %s -h %s'%(mysql_passwd,mysql_username,mysql_host)
-mysql_import_exec = ' '.join(('mysql', mysql_auth_string, '{db}', '-e "source ' + rel('world/{dump}'+'"')))
+mysql_import_exec = ' '.join(('mysql', mysql_auth_string, '{db}', '-e "source ' + rel('{folder}/{dump}'+'"')))
 
 #get list of dumps
 try:
