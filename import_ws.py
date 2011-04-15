@@ -87,7 +87,7 @@ except:
 dprint("Import of WORLD database...", "Import of WORLD database...\n")
 for table_dump in world_dumps_list:
     dprint('', table_dump)
-    res_code = os.system(mysql_import_exec.format(db=mysql_mangos_world, dump=table_dump))
+    res_code = os.system(mysql_import_exec.format(db=mysql_mangos_world, dump=table_dump, folder='world'))
     if res_code > 0:
         print 'Error on importing of the table file "%s", result code: %s'%(table_dump, res_code)
         exit(1)
@@ -98,7 +98,7 @@ dprint(' done', 'Done importing WORLD database')
 dprint("Import of SCRIPTS database...", "Import of SCRIPTS database...\n")
 for table_dump in scripts_dumps_list:
     dprint('', table_dump)
-    res_code = os.system(mysql_import_exec.format(db=mysql_mangos_scripts, dump=table_dump))
+    res_code = os.system(mysql_import_exec.format(db=mysql_mangos_scripts, dump=table_dump, folder='scripts'))
     if res_code > 0:
         print 'Error on importing of the table file "%s", result code: %s'%(table_dump, res_code)
         exit(1)
