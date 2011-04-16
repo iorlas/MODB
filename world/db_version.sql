@@ -19,14 +19,14 @@ DROP TABLE IF EXISTS `db_version`;
 CREATE TABLE `db_version` (
   `version` varchar(120) default NULL,
   `creature_ai_version` varchar(120) default NULL,
-  `required_s1120_11335_02_mangos_mangos_string` bit(1) default NULL
+  `required_s1130_11348_01_mangos_spell_bonus_data` bit(1) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Used DB version notes';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `db_version` WRITE;
 /*!40000 ALTER TABLE `db_version` DISABLE KEYS */;
 set autocommit=0;
-INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1120_11335_02_mangos_mangos_string`) VALUES ('TBC-DB 1.0.4 \'Moving Forward\' for MaNGOS ONE s0657','ACID 2.0.5 - Full Release for MaNGOS One (2.4.3 Client)',NULL);
+INSERT INTO `db_version` (`version`, `creature_ai_version`, `required_s1130_11348_01_mangos_spell_bonus_data`) VALUES ('TBC-DB 1.0.4 \'Moving Forward\' for MaNGOS ONE s0657','ACID 2.0.5 - Full Release for MaNGOS One (2.4.3 Client)',NULL);
 /*!40000 ALTER TABLE `db_version` ENABLE KEYS */;
 UNLOCK TABLES;
 commit;
