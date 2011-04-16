@@ -92,10 +92,10 @@ Some variables cannot be found, make sure %s file contains this-like struct:
 #make queries
 mysqldump_begin = 'mysqldump ' + ' '.join(mysqldump_params)
 mysql_auth_string = '--password=%s -u %s -h %s'%(mysql_passwd,mysql_username,mysql_host)
-mysqldump_exec_scripts = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_scripts), '--result-file='+rel('scripts/{table}.sql'), mysql_auth_string, mysql_mangos_scripts, '{table}'))
-mysqldump_exec_characters = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_characters), '--result-file='+rel('characters/{table}.sql'), mysql_auth_string, mysql_mangos_characters, '{table}'))
-mysqldump_exec_realm = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_realm), '--result-file='+rel('realm/{table}.sql'), mysql_auth_string, mysql_mangos_realm, '{table}'))
-mysqldump_exec_world = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_world), '--result-file='+rel('world/{table}.sql'), mysql_auth_string, mysql_mangos_world, '{table}'))
+mysqldump_exec_scripts = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_scripts), mysql_auth_string, mysql_mangos_scripts, '{table}', ' > '+rel('scripts/{table}.sql')))
+mysqldump_exec_characters = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_characters), mysql_auth_string, mysql_mangos_characters, '{table} | sed \'s/AUTO_INCREMENT=[0-9]*\\b//\'', ' > '+rel('characters/{table}.sql')))
+mysqldump_exec_realm = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_realm), mysql_auth_string, mysql_mangos_realm, '{table} | sed \'s/AUTO_INCREMENT=[0-9]*\\b//\'', ' > '+rel('realm/{table}.sql')))
+mysqldump_exec_world = ' '.join((mysqldump_begin, ' '.join(mysqldump_params_world), mysql_auth_string, mysql_mangos_world, '{table}', ' > '+rel('world/{table}.sql')))
 
 #get tables list
 try:
