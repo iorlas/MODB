@@ -1,0 +1,1 @@
+update tirach_world.npc_vendor set ExtendedCost = 1 where ExtendedCost = 1
