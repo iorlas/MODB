@@ -21,7 +21,7 @@ CREATE TABLE `spell_affect` (
   `effectId` tinyint(3) unsigned NOT NULL default '0',
   `SpellFamilyMask` bigint(20) unsigned NOT NULL default '0',
   PRIMARY KEY  (`entry`,`effectId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `spell_affect` WRITE;
@@ -770,7 +770,6 @@ INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (2985
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (29888,0,1073741824);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (29889,0,1073741824);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (29976,0,557842485);
-INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30017,0,0);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30049,0,524288);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30051,0,524288);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30052,0,524288);
@@ -797,6 +796,7 @@ INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (3008
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30086,0,7814698026010);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30086,1,1024);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30086,2,2);
+INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30017,0,0);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30143,0,137438953472);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30144,0,137438953472);
 INSERT INTO `spell_affect` (`entry`, `effectId`, `SpellFamilyMask`) VALUES (30145,0,137438953472);
